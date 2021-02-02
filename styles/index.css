@@ -1,0 +1,15 @@
+#occian_head {
+  width: 350px;
+  height: 350px;
+}
+
+h1 {
+  font-family: 'Tangerine', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 69px;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+#role {
+  color: brown;
+}
