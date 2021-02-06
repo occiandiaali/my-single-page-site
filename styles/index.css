@@ -4,14 +4,33 @@
 }
 
 h1 {
-  font-family: 'Tangerine', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Tangerine", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 69px;
   font-weight: bold;
   text-shadow: 4px 4px 4px #aaa;
 }
 
-#role {
+.role {
   color: brown;
+}
+
+details > summary {
+  padding: 4px;
+  width: 200px;
+  margin-left: 42%;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 11px;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  border-radius: 11px;
+  box-shadow: 1px 1px 2px #bbbbbb;
 }
 
 #night {
@@ -55,7 +74,7 @@ h1 {
 
 .slider:before {
   position: absolute;
-  content: '';
+  content: "";
   /*height: 26px;*/
   height: 13px;
   /*width: 26px;*/
@@ -103,4 +122,26 @@ input:checked + .slider:before {
 .black {
   background: #000;
   color: #fff;
+}
+.black .role {
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .black .role {
+    color: brown;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  details > summary {
+    margin-left: 18%;
+    margin-bottom: 3px;
+  }
+  details > p {
+    margin-bottom: 19px;
+  }
+  .black .role {
+    color: brown;
+  }
 }
