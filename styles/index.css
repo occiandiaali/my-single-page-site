@@ -8,15 +8,21 @@ h1 {
   font-size: 69px;
   font-weight: bold;
   text-shadow: 4px 4px 4px #aaa;
+  margin-bottom: 1px;
+}
+
+#descripto {
+  margin-top: 1px;
 }
 
 .role {
   color: brown;
+  overflow-wrap: break-word;
 }
 
 details > summary {
   padding: 4px;
-  width: 200px;
+  width: 160px;
   margin-left: 42%;
   background-color: #eeeeee;
   border: none;
